@@ -6,9 +6,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #fafafa;
+  background: #212121;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.fixed {
+  position: fixed;
+}
+.navbar.fixed{
+  top: 0;
+  width: 100%;
+
+}
+.wrapper { 
+  display: inline;
+}
+.wrapper.navbar {
+  height: 5vh;
+  display: block;
+  background: skyblue;
+}
+.container {
+  margin-top: 6vh;
 }
