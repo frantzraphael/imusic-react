@@ -1,9 +1,19 @@
+import { render } from 'react-dom';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+const renderApp = Comp => render(
+  <App />,
+  document.querySelector('#itunes-search')
+);
+
+renderApp(App);
+
+if (module.hot) {
+  module.hot.accept('./components/App', _ => renderApp(App));
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

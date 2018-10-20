@@ -6,9 +6,8 @@ import Container from './Container';
 const App = () => {
     return (
       <div className="App">
-        <Header text="Oioioioi"/>
-        <Container text="Celular Novo app React" />
-        {/* <Footer/> */}
+        <Header/>
+        <Container text="Suas músicas ao alcance dos seus dedos"/>
       </div>
     );
 };
