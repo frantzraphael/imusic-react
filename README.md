@@ -1,7 +1,5 @@
-# Imusic React App
+# iMuusic React App
 
----
+
 
 ### Search your favorite music, artistis or collections
-
-

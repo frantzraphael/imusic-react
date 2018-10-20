@@ -10,8 +10,8 @@ export type HeaderState = {
 };
 
 export type Limit = {
-  limit: number;
-}
+  limit: '20'
+};
 
 export type SearchResult = {
   trackId: number,
