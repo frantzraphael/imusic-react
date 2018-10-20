@@ -1,3 +1,3 @@
-import type { HeaderState } from './type';
+import type { HeaderState, Limit } from './type';
 
-export const getApiUrl = (query : HeaderState) => `https://itunes.apple.com/search?media=music&term=${query.query.split(' ').join('+')}`;
+export const getApiUrl = (query : HeaderState, limit: Limit) => `https://itunes.apple.com/search?media=music&term=${query.query.split(' ').join('+')}&limit=${limit !== undefined ? limit : 10}`;

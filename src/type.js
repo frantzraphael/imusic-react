@@ -9,6 +9,10 @@ export type HeaderState = {
   query: string
 };
 
+export type Limit = {
+  limit: number;
+}
+
 export type SearchResult = {
   trackId: number,
   trackPrice?: number,

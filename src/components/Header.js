@@ -13,7 +13,7 @@ emitSearch: () => void;
   rAf: any;
 
   state: HeaderState = {
-    query: 'jack+johnson'
+    query: ''
   };
 
   constructor(props: Object) {

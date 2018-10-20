@@ -22,7 +22,7 @@ const Item = (props: SearchResult) => (
         <span className="card-title activator grey-text text-darken-4">{props.trackName || props.collectionName}<i className="material-icons right">more_vert</i></span>
         <span className="card-title activator grey-text text-darken-4">{props.artistName}<i className="material-icons right">more_vert</i></span>
         <p>
-          <a target="_blank" href={props.trackViewUrl || props.collectionViewUrl}>
+          <a target="_blank" rel="noopener" noreferrer="true" href={props.trackViewUrl || props.collectionViewUrl}>
             more
           </a>
         </p>
