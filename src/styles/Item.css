@@ -1,0 +1,31 @@
+.card-wrapper{
+    width: calc(100% - 20px);
+    margin: 0 auto;  
+}
+.card-image{
+    position: relative;
+    display: block;
+    max-width: 100%;
+}
+.card-image img{ 
+    max-width: 100%;
+    transition: transform .1s linear;
+}
+.card-image img:hover{
+    transition: transform .33s ease-in;
+    transform: scale(1.03);
+}
+
+.player-wrapper video{
+    max-width: 98%;
+    margin: 0 auto 12px;
+    display: block;
+    position: relative;
+}
+
+@media(min-width:768px){
+    .card-wrapper{
+        width: calc(20% - 20px);
+        margin: 30px 10px  40px;  
+    }
+}
