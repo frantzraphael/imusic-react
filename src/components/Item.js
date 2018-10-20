@@ -19,17 +19,18 @@ const Item = (props: SearchResult) => (
         </video>
       </div>
       <div className="card-content">
-        <span className="card-title activator grey-text text-darken-4">{props.trackName || props.collectionName}<i className="material-icons right">more_vert</i></span>
-        <span className="card-title activator grey-text text-darken-4">{props.artistName}<i className="material-icons right">more_vert</i></span>
+        <span className="card-title activator grey-text text-darken-4">{props.trackName || props.collectionName}</span>
+        <i className="material-icons activator right">more_horiz</i>
+        <span className="card-title artist grey-text text-darken-4">{props.artistName}</span>
         <p>
-          <a target="_blank" rel="noopener" noreferrer="true" href={props.trackViewUrl || props.collectionViewUrl}>
+          <a target="_blank" rel="noopener noreferrer" href={props.trackViewUrl || props.collectionViewUrl}>
             more
           </a>
         </p>
       </div>
       <div className="card-reveal">
-        <span className="card-title grey-text text-darken-4">{props.trackName || props.collectionName}<i className="material-icons right">close</i></span>
-        <p>{props.longDescription || props.description || 'No description.'}</p>
+        <span className="card-title grey-text text-darken-4">{props.collectionName}<i className="material-icons right">close</i></span>
+        {/* <p>{props.longDescription || props.description || 'No description.'}</p> */}
       </div>
     </div>
   </div>

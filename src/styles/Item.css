@@ -15,12 +15,20 @@
     transition: transform .33s ease-in;
     transform: scale(1.03);
 }
-
+.card-title {
+    width: 100%;
+    display: block;
+}
 .player-wrapper video{
     max-width: 98%;
     margin: 0 auto 12px;
     display: block;
     position: relative;
+}
+
+.artist {
+    font-size: 12px;
+    margin: 0 auto;  
 }
 
 @media(min-width:768px){

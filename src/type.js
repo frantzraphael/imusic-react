@@ -25,7 +25,5 @@ export type SearchResult = {
   artistName?: string,
   collectionName?: string,
   kind: string,
-  previewUrl?: string,
-  longDescription?: string,
-  description?: string
+  previewUrl?: string
 };
