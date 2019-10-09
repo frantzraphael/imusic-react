@@ -6,7 +6,7 @@ import App from './components/App';
 
 const renderApp = Comp => render(
   <App />,
-  document.querySelector('#itunes-search')
+  document.querySelector('#root')
 );
 
 renderApp(App);
